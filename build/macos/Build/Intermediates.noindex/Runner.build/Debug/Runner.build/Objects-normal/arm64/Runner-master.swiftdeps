@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "5a3d677e9da721ad0ad32dd6daf6e5547ec17352e07772bf02f4cf6f530241af"
+build_start_time: [1686624677, 691300000]
+build_end_time: [1686624683, 230740000]
+inputs:
+  "/Users/keisukesaichi/widone/macos/Flutter/GeneratedPluginRegistrant.swift": [1686624666, 500449857]
+  "/Users/keisukesaichi/widone/macos/Runner/AppDelegate.swift": [1684953154, 0]
+  "/Users/keisukesaichi/widone/macos/Runner/MainFlutterWindow.swift": [1684953154, 0]
