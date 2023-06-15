@@ -1,0 +1,20 @@
+dependencies: \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/Runner/GeneratedPluginRegistrant.m \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/Runner/GeneratedPluginRegistrant.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Modules/module.modulemap \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/Flutter.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterAppDelegate.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterMacros.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterPlugin.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterBinaryMessenger.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterChannels.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterCodecs.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterPlatformViews.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterTexture.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterCallbackCache.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterDartProject.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterEngine.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterEngineGroup.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterHeadlessDartRunner.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterPluginAppLifeCycleDelegate.h \
+  /Users/keisukesaichi/Documents/GitHub/widget1/ios/build/Debug-iphoneos/Flutter.framework/Headers/FlutterViewController.h

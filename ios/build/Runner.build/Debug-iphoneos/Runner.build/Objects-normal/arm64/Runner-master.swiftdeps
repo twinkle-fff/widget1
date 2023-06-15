@@ -1,0 +1,6 @@
+version: "Apple Swift version 5.8 (swiftlang-5.8.0.124.2 clang-1403.0.22.11.100)"
+options: "b608a324c6358ddbb7b8f89a5849c2cecc9e8a2b79f2ec9c9448a5183b2a1f8c"
+build_start_time: [1686807473, 498722000]
+build_end_time: [1686807477, 647092000]
+inputs:
+  "/Users/keisukesaichi/Documents/GitHub/widget1/ios/Runner/AppDelegate.swift": [1684953154, 0]
