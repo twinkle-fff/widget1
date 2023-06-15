@@ -46,17 +46,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       _selectedIndex = index;
     });
   }
-  
-  final NowOnIcon nowOnIcon = NowOnIcon();
-  
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: _screens[_selectedIndex],
       bottomNavigationBar: Container(
         decoration: BoxDecoration(
-          color: Colors.blue, // バックグラウンドカラーを指定
+          color: Colors.white, // バックグラウンドカラーを指定
         ),
         child: Column(
           mainAxisSize: MainAxisSize.min,
@@ -68,7 +65,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 8.0),
               child: BottomNavigationBar(
-
                 currentIndex: _selectedIndex,
                 onTap: _onItemTapped,
                 items: <BottomNavigationBarItem>[
@@ -106,7 +102,23 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     ),
                     label: 'マッチング',
                   ),
-                  NowOnIcon().build(context),
+                  BottomNavigationBarItem(
+                    icon: Container(
+                      margin: EdgeInsets.only(top: 13.0),
+                      child: Icon(
+                        Icons.find_replace_outlined,
+                        size: 28,
+                      ),
+                    ),
+                    activeIcon: Container(
+                      margin: EdgeInsets.only(top: 13.0),
+                      child: Icon(
+                        Icons.find_replace,
+                        size: 28,
+                      ),
+                    ),
+                    label: 'Now-on',
+                  ),
                   BottomNavigationBarItem(
                     icon: Container(
                       margin: EdgeInsets.only(top: 13.0),
@@ -166,38 +178,36 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   }
 }
 
-class NowOnIcon extends StatefulWidget{
-  NowOnIcon({Key? key}) : super(key: key);
-  Image image = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/edit.svg");
-  Image activeImage = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/error.svg");
-  @override
-  BottomNavigationBarItem build(BuildContext context) {
-    return BottomNavigationBarItem(
-      icon: Container(
-        child: Container(
-          decoration: BoxDecoration(shape: BoxShape.circle,color: Colors.orange),
-          width: 80,
-          height: 80,
-          padding: const EdgeInsets.only(left: 4,right: 4),
-          // child: image,
-        ),
-      ),
-      activeIcon: Container(
-        child: Container(
-        decoration:  BoxDecoration(shape: BoxShape.circle,color: Colors.red),
-        width: 80,
-        height: 80,
-        padding: const EdgeInsets.only(left: 4,right: 4),
-        // child: image,
-       )
-      ),
-      label: "",
-    );
-  }
-
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
-  }
-}
+// class NowOnIcon extends StatefulWidget{
+//   NowOnIcon({Key? key}) : super(key: key);
+//   Image image = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/edit.svg");
+//   Image activeImage = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/error.svg");
+//   @override
+//   BottomNavigationBarItem build(BuildContext context) {
+//     return BottomNavigationBarItem(
+//       icon: Container(
+//         child: Container(
+//           color: Colors.red,
+//           decoration: BoxDecoration(shape: BoxShape.circle),
+//           width: 72,
+//           height: 72,
+//           padding: EdgeInsets.all(30),
+//           child: image,
+//         ),
+//       ),
+//       activeIcon: Container(
+//         child: Container(
+//         padding: EdgeInsets.all(30),
+//         child: image,
+//        )
+//       ),
+//       label: "Now-on",
+//     );
+//   }
+//
+//   @override
+//   State<StatefulWidget> createState() {
+//     // TODO: implement createState
+//     throw UnimplementedError();
+//   }
+// }
