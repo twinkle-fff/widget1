@@ -70,7 +70,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 items: <BottomNavigationBarItem>[
                   BottomNavigationBarItem(
                     icon: Container(
-
                       margin: EdgeInsets.only(top: 13.0),
                       child: Icon(
                         Icons.person_search_outlined,
@@ -106,7 +105,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                   BottomNavigationBarItem(
                     icon: Container(
                       margin: EdgeInsets.only(top: 13.0),
-
                       child: Icon(
                         Icons.find_replace_outlined,
                         size: 28,
@@ -119,6 +117,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                         size: 28,
                       ),
                     ),
+                    label: 'Now-on',
                   ),
                   BottomNavigationBarItem(
                     icon: Container(
@@ -179,35 +178,36 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   }
 }
 
-class NowOnIcon extends StatefulWidget{
-  NowOnIcon({Key? key}) : super(key: key);
-  Image image = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/edit.svg");
-  Image activeImage = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/error.svg");
-  @override
-  BottomNavigationBarItem build(BuildContext context) {
-    return BottomNavigationBarItem(
-      icon: Container(
-        child: Container(
-          color: Colors.red,
-          decoration: BoxDecoration(shape: BoxShape.circle),
-          width: 72,
-          height: 72,
-          padding: EdgeInsets.all(30),
-          child: image,
-        ),
-      ),
-      activeIcon: Container(
-        child: Container(
-        padding: EdgeInsets.all(30),
-        child: image,
-       )
-      )
-    );
-  }
-
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
-  }
-}
+// class NowOnIcon extends StatefulWidget{
+//   NowOnIcon({Key? key}) : super(key: key);
+//   Image image = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/edit.svg");
+//   Image activeImage = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/error.svg");
+//   @override
+//   BottomNavigationBarItem build(BuildContext context) {
+//     return BottomNavigationBarItem(
+//       icon: Container(
+//         child: Container(
+//           color: Colors.red,
+//           decoration: BoxDecoration(shape: BoxShape.circle),
+//           width: 72,
+//           height: 72,
+//           padding: EdgeInsets.all(30),
+//           child: image,
+//         ),
+//       ),
+//       activeIcon: Container(
+//         child: Container(
+//         padding: EdgeInsets.all(30),
+//         child: image,
+//        )
+//       ),
+//       label: "Now-on",
+//     );
+//   }
+//
+//   @override
+//   State<StatefulWidget> createState() {
+//     // TODO: implement createState
+//     throw UnimplementedError();
+//   }
+// }
