@@ -70,7 +70,6 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                 items: <BottomNavigationBarItem>[
                   BottomNavigationBarItem(
                     icon: Container(
-
                       margin: EdgeInsets.only(top: 13.0),
                       child: Icon(
                         Icons.person_search_outlined,
@@ -103,7 +102,23 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     ),
                     label: 'マッチング',
                   ),
-                  NowOnIcon().build(context),
+                  BottomNavigationBarItem(
+                    icon: Container(
+                      margin: EdgeInsets.only(top: 13.0),
+                      child: Icon(
+                        Icons.find_replace_outlined,
+                        size: 28,
+                      ),
+                    ),
+                    activeIcon: Container(
+                      margin: EdgeInsets.only(top: 13.0),
+                      child: Icon(
+                        Icons.find_replace,
+                        size: 28,
+                      ),
+                    ),
+                    label: 'Now-on',
+                  ),
                   BottomNavigationBarItem(
                     icon: Container(
                       margin: EdgeInsets.only(top: 13.0),
@@ -163,34 +178,36 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
   }
 }
 
-class NowOnIcon extends StatefulWidget{
-  Image image = Image.network("http://www.twinkstar.jp/photo-1598439210625-5067c578f3f6.jpeg");
-  Image activeImage = Image.network("http://www.twinkstar.jp/photo-1598439210625-5067c578f3f6.jpeg");
-  @override
-  BottomNavigationBarItem build(BuildContext context) {
-    return BottomNavigationBarItem(
-      icon: Container(
-        child: Container(
-          decoration: BoxDecoration(shape: BoxShape.circle,color: Colors.red),
-          width: 72,
-          height: 72,
-          padding: EdgeInsets.all(30),
-          child: image
-        ),
-      ),
-      activeIcon: Container(
-        child: Container(
-        padding: EdgeInsets.all(30),
-        child: activeImage
-       )
-      ),
-        label: ""
-    );
-  }
-
-  @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
-  }
-}
+// class NowOnIcon extends StatefulWidget{
+//   NowOnIcon({Key? key}) : super(key: key);
+//   Image image = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/edit.svg");
+//   Image activeImage = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/error.svg");
+//   @override
+//   BottomNavigationBarItem build(BuildContext context) {
+//     return BottomNavigationBarItem(
+//       icon: Container(
+//         child: Container(
+//           color: Colors.red,
+//           decoration: BoxDecoration(shape: BoxShape.circle),
+//           width: 72,
+//           height: 72,
+//           padding: EdgeInsets.all(30),
+//           child: image,
+//         ),
+//       ),
+//       activeIcon: Container(
+//         child: Container(
+//         padding: EdgeInsets.all(30),
+//         child: image,
+//        )
+//       ),
+//       label: "Now-on",
+//     );
+//   }
+//
+//   @override
+//   State<StatefulWidget> createState() {
+//     // TODO: implement createState
+//     throw UnimplementedError();
+//   }
+// }
