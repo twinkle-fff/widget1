@@ -103,23 +103,7 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
                     ),
                     label: 'マッチング',
                   ),
-                  BottomNavigationBarItem(
-                    icon: Container(
-                      margin: EdgeInsets.only(top: 13.0),
-
-                      child: Icon(
-                        Icons.find_replace_outlined,
-                        size: 28,
-                      ),
-                    ),
-                    activeIcon: Container(
-                      margin: EdgeInsets.only(top: 13.0),
-                      child: Icon(
-                        Icons.find_replace,
-                        size: 28,
-                      ),
-                    ),
-                  ),
+                  NowOnIcon().build(context),
                   BottomNavigationBarItem(
                     icon: Container(
                       margin: EdgeInsets.only(top: 13.0),
@@ -180,28 +164,27 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
 }
 
 class NowOnIcon extends StatefulWidget{
-  NowOnIcon({Key? key}) : super(key: key);
-  Image image = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/edit.svg");
-  Image activeImage = Image.network("www.twinkstar.jp/html/SVGICON/Fill_Off/error.svg");
+  Image image = Image.network("http://www.twinkstar.jp/photo-1598439210625-5067c578f3f6.jpeg");
+  Image activeImage = Image.network("http://www.twinkstar.jp/photo-1598439210625-5067c578f3f6.jpeg");
   @override
   BottomNavigationBarItem build(BuildContext context) {
     return BottomNavigationBarItem(
       icon: Container(
         child: Container(
-          color: Colors.red,
-          decoration: BoxDecoration(shape: BoxShape.circle),
+          decoration: BoxDecoration(shape: BoxShape.circle,color: Colors.red),
           width: 72,
           height: 72,
           padding: EdgeInsets.all(30),
-          child: image,
+          child: image
         ),
       ),
       activeIcon: Container(
         child: Container(
         padding: EdgeInsets.all(30),
-        child: image,
+        child: activeImage
        )
-      )
+      ),
+        label: ""
     );
   }
 
